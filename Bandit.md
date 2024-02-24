@@ -46,4 +46,14 @@ owned by group bandit6,
 2.we acn use cat and grep to find password :<br>
 cat data.txt  | grep "millionth"<br>
 ## LEVEL 8-9
+1.The password for the next level is stored in the file data.txt and is the only line of text that occurs only once<br>
+2.according to given info the password is unique so we can use "sort" command to sort them to small n.o of lines<br>
+3.but we need a unique one , so for that the command is "sort FILEname | uniq -u"<br>
+## LEVEL 9-10
+1.The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.<br>
+2.we can use "strings" command to print printable stings on the terminal screen and by the == we can use "grep ===="<br>
+## LEVEL 10-11
+1.The password for the next level is stored in the file data.txt, which contains base64 encoded data<br>
+2.we can use cat & base64 -d commands combined to display the decrypted text<br>
+## LEVEL 11-12
 1.
