@@ -56,4 +56,7 @@ cat data.txt  | grep "millionth"<br>
 1.The password for the next level is stored in the file data.txt, which contains base64 encoded data<br>
 2.we can use cat & base64 -d commands combined to display the decrypted text<br>
 ## LEVEL 11-12
-1.
+1.The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions<br>
+2. ROT13 ENCRYPTION AND DECRYPTION METHODS USIN "tr command"<br>
+3.we can decrypt by "tr '[A-Za-z]' '[N-ZA-Mn-za-m]' " <br>
+## LEVEL 12-13
