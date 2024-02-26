@@ -77,3 +77,10 @@ nc localhost  30000 .<br>
 1.The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.<br>
 2.we can do that by entering current password and we can get next level password by this command<br>
 openssl s_client -connect localhost:30001   .<br>
+## LEVEL 16-17
+1.The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000.<br>
+2.we check which ports are active by the command "netstat -lntup",but we need to with state of service so we can use another command: <br>
+"nmap -sV localhost -p 31000-32000"<br>
+3.Then we can use command "openssl s_client -connect localhost:31790"
+4.then we will obtain private-RSA key,then we can save the rsa key in host machine with a filename and then we can use the below command:<br>
+"sudo ssh -i lok17 bandit17@bandit.labs.overthewire.org -p 2220"<br>
