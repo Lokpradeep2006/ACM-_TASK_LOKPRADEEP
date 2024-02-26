@@ -84,3 +84,21 @@ openssl s_client -connect localhost:30001   .<br>
 3.Then we can use command "openssl s_client -connect localhost:31790"
 4.then we will obtain private-RSA key,then we can save the rsa key in host machine with a filename and then we can use the below command:<br>
 "sudo ssh -i lok17 bandit17@bandit.labs.overthewire.org -p 2220"<br>
+## LEVEL 17-18
+1.There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new<br>
+2.we can use the command to find the password "diff passwords.old passwords.new",then the diff line of password will be given on second line.<br>
+3.after login to server bnadit18 ,we will see "Byebye !".<br>
+## LEVEL 18-19
+1.The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.<br>
+2.so,Instead of logging into the machine with SSH, we execute a command through SSH instead as folow:<br>
+ssh bandit18@bandit.labs.overthewire.org -p 2220 ls ---to know whether readme file is present or not
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme --to open the readme file for password
+## LEVEL 19-20
+1.To gain access to the next level, you should use the setuid binary in the homedirectory<br>
+2."ls -la" to check bandit20 uid file owner,we can see permissions like "-rwsr-x---" so the group is bandit 19 it can excute but cannot read it<br>
+3.so we will exicute but we will not read through file owner named as bandit20 through below commands : <br>
+"./bandit20-do ls /etc/bandit_pass"<br>
+"./bandit20-do cat /etc/bandit_pass/bandit20"
+4.now we can get the password for bandit20.<br>
+## LEVEL 20-21
+1.
