@@ -60,3 +60,20 @@ cat data.txt  | grep "millionth"<br>
 2. ROT13 ENCRYPTION AND DECRYPTION METHODS USIN "tr command"<br>
 3.we can decrypt by "tr '[A-Za-z]' '[N-ZA-Mn-za-m]' " <br>
 ## LEVEL 12-13
+1.The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.<br>
+2.For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv.<br>
+3.we will do reverse hexdump & save that in a new file using command  xxd -r  <input_file> <output_file> .<br>
+4.after that we will do repetadely decompression of new file with gzip -d and bz2 -d commands ,tar -xf.<br>
+## LEVEL 13-14
+1.he password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14<BR>
+2.we can copy ssh_private key to main host user and we use this command with saved private key in host<br>
+sudo ssh -i "SAVED FILE_NAME" bandit14@bandit.labs.overthewire.org -p2220  <br>
+3.now we can go to bandit_pass and we can save level 14 password.<br>
+## LEVEL 14-15
+1.The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.<br>
+2.we can use netcat command to get next level password by entering current level password<br>
+nc localhost  30000 .<br>
+## LEVEL 15-16
+1.The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.<br>
+2.we can do that by entering current password and we can get next level password by this command<br>
+openssl s_client -connect localhost:30001   .<br>
