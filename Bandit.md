@@ -100,5 +100,3 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme --to open the readme
 "./bandit20-do ls /etc/bandit_pass"<br>
 "./bandit20-do cat /etc/bandit_pass/bandit20"
 4.now we can get the password for bandit20.<br>
-## LEVEL 20-21
-1.
