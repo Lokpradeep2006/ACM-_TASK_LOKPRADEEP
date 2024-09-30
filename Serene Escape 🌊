@@ -1,6 +1,6 @@
 ## Within the metadata of a specific image, you will find a clue encoded in Base64 format. By carefully decoding this hidden information, you will unveil an IP address. The decoded IP will lead you to a beautiful location—a dam, to be exact.
 
-### Steps to Solve:
+## Steps to Solve:
 
 1. Extract the metadata from the provided image.
 2. Look for the `Image Description` field, which contains a string:
