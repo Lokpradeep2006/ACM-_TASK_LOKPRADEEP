@@ -19,3 +19,4 @@ Decrypted Plaintext
 The resulting decrypted plaintext is:
 42800643192345849658832356723113079698799922547523584
 This concludes the successful decryption process.
+Decipher: b'recr{H4s4d_is_t0_g00d}'
