@@ -1,3 +1,5 @@
+We solved this using the Chinese Remainder Theorem (CRT) to combine the three ciphertexts under the different moduli and then computed the integer cube root (since 𝑒=3) to reveal the original message.
+
 # Solving with Chinese Remainder Theorem (CRT)
 
 We solved the problem using the Chinese Remainder Theorem (CRT) to combine the three ciphertexts under different moduli. After combining, we computed the integer cube root (since `e = 3`) to reveal the original message.
